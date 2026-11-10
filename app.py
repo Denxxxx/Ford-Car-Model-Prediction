@@ -25,7 +25,6 @@ def load_model(filename):
 
 # Try to load both models
 rf_model = load_model('random_forest_model.joblib')
-lr_model = load_model('linear_regression_model.joblib')
 
 # Check if at least one model exists
 if rf_model is None and lr_model is None:
