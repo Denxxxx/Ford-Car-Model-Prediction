@@ -83,7 +83,7 @@ else:
             predictions = {}
             if rf_model is not None:
                 try:
-                    predictions['Random Forest (Recommended)'] = rf_model.predict(input_data)[0]
+                    predictions['Random Forest'] = rf_model.predict(input_data)[0]
                 except Exception as e:
                     st.error(f"Inference error (Random Forest): {e}")
             if lr_model is not None:
